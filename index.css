@@ -1,0 +1,132 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+:root{
+  --primary-color: rgb(194, 33, 243);
+}
+
+header {
+  background-color: var(--primary-color);
+  padding-top: 1em;
+  padding-bottom: .5em;
+  margin-top: -1em;
+  margin-left: -1em;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-left: auto;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+a:hover {
+  color: black;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 2em;
+  align-content: center;
+  padding-left: 1em;
+}
+
+.navbar .logo span {
+color: black;
+}
+.ctn1 { 
+  grid-area: about; 
+}
+
+.ctn2 { 
+  grid-area: goals; 
+}
+.ctn3 { 
+  grid-area: main;
+}
+}
+.ctn4 { 
+  grid-area: hobbies; 
+}
+.ctn5 { 
+  grid-area: skills; 
+}
+.container {
+  grid-template-areas:
+    'about about about about'
+    'goals goals goals goals'
+    'main main main main'
+    'hobbies hobbies skills skills';
+  row-gap: 80px;
+  background-color: white;
+}
+.ctn1 {
+  background-color: rgb(230, 221, 239); 
+  margin-top: 4em;
+  border: 1px solid rgb(230, 221, 239);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  margin: 50px 100px;
+}
+.myPicture {
+  width: 5em;
+  height: 5em;
+  border: 5px solid var(--primary-color);
+  border-radius: 50%;
+  /* margin-top: -6em; */
+}
+.ctn1 p {
+  font-size: 18px;
+}
+.ctn2 h2 {
+  text-align: center;
+}
+.ctn2 p {
+  font-size: 18px;
+}
+.ctn3 {
+  /* background-color: rgb(230, 221, 239);  */
+  border: 5px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
+.ctn3 li{
+  font-size: 18px;
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px ;
+  margin-top: 30px;
+}
+.ctn4 {
+  background-color: rgb(230, 221, 239); 
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  width: 35%;
+  height: 300px;
+  text-align: left;
+}
+.ctn5 {
+  background-color: rgb(230, 221, 239); 
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  width: 35%;
+  height: 300px;
+  text-align: left;
+}
